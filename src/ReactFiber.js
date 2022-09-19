@@ -1,9 +1,9 @@
-import { ClassComponent, FunctionComponent, HostComponent } from "./ReactWorkTags";
+import { FunctionComponent, HostComponent } from "./ReactWorkTags";
 import { isFn, isStr, Placement } from "./utils";
 
 /**
- * @param {*} vnode 
- * @param {*} returnFiber 
+ * @param {*} vnode 虚拟dom
+ * @param {*} returnFiber 父节点
  * @returns 
  */
 export function createFiber(vnode, returnFiber) {

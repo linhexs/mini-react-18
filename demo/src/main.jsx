@@ -1,11 +1,10 @@
-import React from 'react'
-import ReactDOM from 'react-dom'
-import './index.css'
-import App from './App'
+import { ReactDOM } from "../which-react";
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-)
+const jsx = (
+  <div className="border">
+    <h1>react</h1>
+    <a href="xxx">mini react 18</a>
+  </div>
+);
+
+ReactDOM.createRoot(document.getElementById("root")).render(jsx);

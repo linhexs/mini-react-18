@@ -1,6 +1,12 @@
 import { ClassComponent, Fragment, FunctionComponent, HostComponent, HostText } from "./ReactWorkTags";
 
-let wip = null;
+let wip = null; // workInProgress
+let wipRoot = null
+
+export function scheduleUpdateOnFiber(fiber) {
+  wip = fiber
+  wipRoot = fiber
+}
 
 function performUnitOfWork() {
   const { tag } = wip;
